@@ -13,7 +13,7 @@ var scoreboard = function() {
         
         for (var index = 0; index < results.length; index++) {
             var result = results[index];
-            output += result.name + ' - ' + result.score + ' - ' + result.factor + '<br/>';
+            output += result.name + ' - Scored ' + result.score + ' out of ' + result.problems + ' for factor ' + result.factor + '<br/>';
         }
         
         var scoresElement = document.getElementById('scores');

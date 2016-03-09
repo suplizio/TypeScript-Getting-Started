@@ -11,9 +11,14 @@ var player = function() {
         playerName = newName;
     }
     
+    function getName() {
+        return playerName;
+    }
+    
     // public members
     return {
         logPlayer: logPlayer,
-        setName: setName
+        setName: setName,
+        getName: getName
     };   
 }();

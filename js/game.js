@@ -1,7 +1,7 @@
 var game = function() {
 
     // private members
-    var factor = document.getElementById('factor').value;
+    var factor = document.getElementById('factor');
     var problemsPerGame = 5; // default to 5
     
     function printGame() {
@@ -17,6 +17,9 @@ var game = function() {
         
         var g = document.getElementById('game');
         g.innerHTML = gameForm;
+        
+        var calculateScoreButton = document.getElementById('calculate');
+        calculateScoreButton.style.display = "block";
     }
     
     function calculateScore() {
@@ -27,9 +30,7 @@ var game = function() {
         
         for (var i = 1; i <= problemsInGame; i++) {
             var answer = document.getElementById('answer' + i).value;
-            console.log(answer);
-            console.log(i * factor);
-            if(i * factor == answer) {
+            if(i * factor.value == answer) {
                 console.log('Problem ' + i + ': Correct');
                 score++;
             }
@@ -39,10 +40,10 @@ var game = function() {
         }
         
         var result = {
-            name: 'Audrey',
+            name: player.getName(),
             score: score,
             problems: problemsInGame,
-            factor: factor
+            factor: factor.value
         };
         
         scoreboard.addResult(result);
@@ -74,6 +75,8 @@ var game = function() {
         
         scoreboard.updateScoreboard();
         
+        var calculateScoreButton = document.getElementById('calculate');
+        calculateScoreButton.style.display = "none";
     }
     
     function setProblemCount(newProblemCount) {

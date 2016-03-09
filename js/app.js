@@ -14,6 +14,6 @@ var init = function() {
         game.calculateScore();
     });
     
-    //game.setProblemCount(8);
+    calculateScoreButton.style.display = "none";
     
 }();
