@@ -5,12 +5,10 @@ var game = function() {
     
     function printGame() {
         
-        console.log(factor);
-        
         var gameForm = '';
         
-        for (var index = 1; index <= 12; index++) {
-            gameForm += factor.value + ' x ' + index + ' = <br>';
+        for (var i = 1; i <= 12; i++) {
+            gameForm += factor.value + ' x ' + i + ' = <input type="text" id="answer' + i + '" size="5" /><br>';
         }
         
         var g = document.getElementById('game');

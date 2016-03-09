@@ -13,8 +13,6 @@ var player = function() {
     
     // public members
     return {
-        name: playerName,
-        score: playerScore,
         logPlayer: logPlayer,
         setName: setName
     };   
