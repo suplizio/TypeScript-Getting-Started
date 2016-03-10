@@ -2,7 +2,7 @@ var game = function() {
 
     // private members
     var factor = document.getElementById('factor');
-    var problemsPerGame = 5; // default to 5
+    var problemsPerGame = 3; // default to 3
     
     function printGame() {
         
@@ -18,24 +18,20 @@ var game = function() {
         var g = document.getElementById('game');
         g.innerHTML = gameForm;
         
-        var calculateScoreButton = document.getElementById('calculate');
-        calculateScoreButton.style.display = "block";
+        // show the calculate score button
+        document.getElementById('calculate').style.display = "block";
     }
     
     function calculateScore() {
-        // loop through the text boxes and calculate the number that are correct
         
         var problemsInGame = getProblemCount();
         var score = 0;
         
+        // loop through the text boxes and calculate the number that are correct
         for (var i = 1; i <= problemsInGame; i++) {
             var answer = document.getElementById('answer' + i).value;
             if(i * factor.value == answer) {
-                console.log('Problem ' + i + ': Correct');
                 score++;
-            }
-            else {
-                console.log('Problem ' + i + ': Incorrect');
             }
         }
         
@@ -47,36 +43,10 @@ var game = function() {
         };
         
         scoreboard.addResult(result);
-        
-        // var result1 = {
-        //     name: 'Audrey',
-        //     score: 12,
-        //     problems: 12,
-        //     factor: 11
-        // };
-
-        // var result2 = {
-        //     name: 'Thorne',
-        //     score: 11,
-        //     problems: 12,
-        //     factor: 8
-        // };
-
-        // var result3 = {
-        //     name: 'Leigh Ann',
-        //     score: 7,
-        //     problems: 10,
-        //     factor: 2
-        // };
-        
-        // scoreboard.addResult(result1);
-        // scoreboard.addResult(result2);
-        // scoreboard.addResult(result3);
-        
         scoreboard.updateScoreboard();
-        
-        var calculateScoreButton = document.getElementById('calculate');
-        calculateScoreButton.style.display = "none";
+
+        // hide the calculate score button        
+        document.getElementById('calculate').style.display = "none";
     }
     
     function setProblemCount(newProblemCount) {
