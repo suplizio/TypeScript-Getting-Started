@@ -13,7 +13,7 @@
     });
 
     // calculate score button is initially hidden    
-    calculateScoreButton.style.display = "none";
+    //calculateScoreButton.style.display = "none";
 
     // set the default number of problems    
     document.getElementById('problemCount').value = game.getProblemCount();
