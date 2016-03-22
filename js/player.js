@@ -1,10 +1,10 @@
 var player = function() {
+    
     // private members
-    var playerName = 'Leigh Ann';
-    var playerScore = 20;
+    var playerName = '';
     
     function logPlayer() {
-        console.log(playerName + ' (' + playerScore + ')');
+        console.log('The current player is ' + playerName + '.');
     }
     
     function setName(newName) {
@@ -15,7 +15,7 @@ var player = function() {
         return playerName;
     }
     
-    // public members
+    // return public members
     return {
         logPlayer: logPlayer,
         setName: setName,

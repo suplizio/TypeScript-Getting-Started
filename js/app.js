@@ -6,14 +6,11 @@
         game.printGame();
     });
     
-    // add click handler to the calculate button
+    // add click handler to the calculate score button
     var calculateScoreButton = document.getElementById('calculate');
     calculateScoreButton.addEventListener('click', function() {
         game.calculateScore();
     });
-
-    // calculate score button is initially hidden    
-    //calculateScoreButton.style.display = "none";
 
     // set the default number of problems    
     document.getElementById('problemCount').value = game.getProblemCount();

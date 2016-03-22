@@ -2,15 +2,17 @@ var game = function() {
 
     // private members
     var factorElement = document.getElementById('factor');
-    var problemsPerGame = 3; // default to 3
+    var problemsPerGame = 3; // set default value
     
     function printGame() {
+        
+        player.logPlayer();
         
         // determine the number of problems to show
         setProblemCount(document.getElementById('problemCount').value);
         
+        // create the html for the current game
         var gameForm = '';
-        
         for (var i = 1; i <= problemsPerGame; i++) {
             gameForm += '<div class="form-group">';
             gameForm += '<label for="answer' + i + '" class="col-sm-2 control-label">';
@@ -19,8 +21,9 @@ var game = function() {
             gameForm += '</div>';
         }
         
-        var g = document.getElementById('game');
-        g.innerHTML = gameForm;
+        // add the new game to the page
+        var gameElement = document.getElementById('game');
+        gameElement.innerHTML = gameForm;
         
         // enable the calculate score button
         document.getElementById('calculate').removeAttribute('disabled');
@@ -39,6 +42,7 @@ var game = function() {
             }
         }
         
+        // create a new result object to pass to the scoreboard
         var result = {
             name: player.getName(),
             score: score,
@@ -46,6 +50,7 @@ var game = function() {
             factor: factorElement.value
         };
         
+        // add the result and update the scoreboard
         scoreboard.addResult(result);
         scoreboard.updateScoreboard();
 
