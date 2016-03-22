@@ -9,7 +9,7 @@ var game = function() {
         // determine the number of problems to show
         setProblemCount(document.getElementById('problemCount').value);
         
-        var gameForm = '<div class="form-horizontal">';
+        var gameForm = '';
         
         for (var i = 1; i <= problemsPerGame; i++) {
             gameForm += '<div class="form-group">';
@@ -19,13 +19,11 @@ var game = function() {
             gameForm += '</div>';
         }
         
-        gameForm += '</div>';
-        
         var g = document.getElementById('game');
         g.innerHTML = gameForm;
         
-        // show the calculate score button
-        //document.getElementById('calculate').style.display = "block";
+        // enable the calculate score button
+        document.getElementById('calculate').removeAttribute('disabled');
     }
     
     function calculateScore() {
@@ -45,14 +43,14 @@ var game = function() {
             name: player.getName(),
             score: score,
             problems: problemsInGame,
-            factorElement: factorElement.value
+            factor: factorElement.value
         };
         
         scoreboard.addResult(result);
         scoreboard.updateScoreboard();
 
-        // hide the calculate score button        
-        //document.getElementById('calculate').style.display = "none";
+        // disable the calculate score button        
+        document.getElementById('calculate').setAttribute('disabled', 'true');
     }
     
     function setProblemCount(newProblemCount) {
