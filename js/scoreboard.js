@@ -24,7 +24,4 @@ function updateScoreboard() {
     scoresElement.innerHTML = output;
 }
 
-module.exports = {
-    addResult: addResult,
-    updateScoreboard: updateScoreboard
-};
+export { addResult, updateScoreboard };
