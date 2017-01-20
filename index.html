@@ -51,7 +51,17 @@
     
     <!-- add script tags here -->
 
-    <script src="./build/bundle.js" type="text/javascript"></script>
+    <script src="node_modules/systemjs/dist/system.js"></script>
+    
+    <script>
+        System.config({
+            meta: {
+                format: 'cjs'
+            }
+        });
+        System.import('app/app.js');
+    </script>
+
         
 </body>
 </html>
