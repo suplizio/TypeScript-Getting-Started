@@ -12,6 +12,7 @@ export class Game {
     constructor(public player: Player, public problemCount: number) { }
 
     printGame(): void {
+        console.log('Printing the game...');
         this.player.logPlayer();
 
         // determine the number of problems to show
@@ -37,6 +38,7 @@ export class Game {
 
     calculateScore(): void {
 
+        console.log('Calculating the score...');
         let score: number = 0;
 
         // loop through the text boxes and calculate the number that are correct

@@ -5,7 +5,7 @@ export class Scoreboard {
     private results: Result[] = []; // array to store result of every game
 
     constructor() {
-        console.log('Creating a scoreboard...');
+        console.log('Creating a scoreboard in TS...');
     }
 
     addResult(newResult: Result): void {

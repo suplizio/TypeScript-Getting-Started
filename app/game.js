@@ -9,6 +9,7 @@ var Game = (function () {
         this.defaultProblemCount = 3;
     }
     Game.prototype.printGame = function () {
+        console.log('Printing the game...');
         this.player.logPlayer();
         // determine the number of problems to show
         this.problemCount = Number(document.getElementById('problemCount').value);
@@ -28,6 +29,7 @@ var Game = (function () {
         document.getElementById('calculate').removeAttribute('disabled');
     };
     Game.prototype.calculateScore = function () {
+        console.log('Calculating the score...');
         var score = 0;
         // loop through the text boxes and calculate the number that are correct
         for (var i = 1; i <= this.problemCount; i++) {

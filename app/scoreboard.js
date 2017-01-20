@@ -2,7 +2,7 @@
 var Scoreboard = (function () {
     function Scoreboard() {
         this.results = []; // array to store result of every game
-        console.log('Creating a scoreboard...');
+        console.log('Creating a scoreboard in TS...');
     }
     Scoreboard.prototype.addResult = function (newResult) {
         this.results.push(newResult);

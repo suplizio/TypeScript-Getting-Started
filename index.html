@@ -57,6 +57,11 @@
         System.config({
             meta: {
                 format: 'cjs'
+            },
+            packages: {
+                '.': {
+                    defaultExtension: 'js'
+                }
             }
         });
         System.import('app/app.js');
