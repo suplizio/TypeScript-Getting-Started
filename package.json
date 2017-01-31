@@ -20,6 +20,6 @@
   },
   "dependencies": {
     "requirejs": "^2.2.0",
-    "systemjs": "^0.19.27"
+    "systemjs": "^0.19.43"
   }
 }
