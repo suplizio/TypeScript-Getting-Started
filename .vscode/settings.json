@@ -1,0 +1,26 @@
+{
+    "files.autoSave": "afterDelay",
+
+    "vsicons.presets.angular": false,
+
+    "typescript.check.workspaceVersion": false,
+    "typescript.check.tscVersion": false,
+
+    "files.exclude": {
+        "**/.git": true,
+        "**/.svn": true,
+        "**/.hg": true,
+        "**/.DS_Store": true,
+        "**/.gitignore": true
+    },
+
+    "editor.fontFamily": "Roboto Mono",
+    "editor.fontSize": 16,
+    "editor.quickSuggestions": true,
+    "editor.parameterHints": true,
+    "editor.wordBasedSuggestions": true,
+    "editor.selectionHighlight": false,
+    "editor.suggestOnTriggerCharacters": false,
+
+    "editor.cursorBlinking": "solid"
+}
