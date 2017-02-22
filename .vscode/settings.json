@@ -3,8 +3,6 @@
 
     "vsicons.presets.angular": false,
 
-    "typescript.tsdk": "/Users/brice/AppData/Roaming/npm/node_modules/typescript/lib",
-
     "files.exclude": {
         "**/.git": true,
         "**/.svn": true,
