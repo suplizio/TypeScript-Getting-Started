@@ -1,1 +1,2 @@
-console.log('Hello Multimath!');
+"use strict";
+console.log('Hello Multimath game');
