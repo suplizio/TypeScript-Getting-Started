@@ -45,7 +45,9 @@
       "terminal.background":"#000000",
       "terminal.foreground": "#ffffff"
     },
+
+    "workbench.statusBar.visible": false,
   
-    "window.zoomLevel": 1
+    "window.zoomLevel": 0
      
   }
