@@ -47,7 +47,8 @@
     },
 
     "workbench.statusBar.visible": false,
-  
+    "workbench.editor.openSideBySideDirection": "down",
+    
     "window.zoomLevel": 0
      
   }
