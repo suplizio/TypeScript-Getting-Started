@@ -31,6 +31,8 @@
     "editor.hover.enabled": true,
     "editor.tabCompletion": "onlySnippets",
     "editor.lightbulb.enabled": false,
+
+    "breadcrumbs.enabled": false,
   
     "typescript.suggestionActions.enabled": false,
     "typescript.suggest.completeFunctionCalls": true,
@@ -38,7 +40,12 @@
     "problems.decorations.enabled": false,
   
     "terminal.integrated.fontSize": 16,
+
+    "workbench.colorCustomizations": {
+      "terminal.background":"#000000",
+      "terminal.foreground": "#ffffff"
+    },
   
-    "window.zoomLevel": 0
+    "window.zoomLevel": 1
      
   }
