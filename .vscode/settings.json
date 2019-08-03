@@ -40,10 +40,13 @@
     "problems.decorations.enabled": false,
   
     "terminal.integrated.fontSize": 16,
-
+    
     "workbench.colorCustomizations": {
       "terminal.background":"#000000",
-      "terminal.foreground": "#ffffff"
+      "terminal.foreground": "#ffffff",
+      "terminal.ansiBrightBlack": "#ffffff",
+      "terminal.ansiBrightBlue": "#00ff00",
+      "terminal.ansiBrightYellow": "#ffffff"
     },
 
     "workbench.statusBar.visible": false,
