@@ -23,7 +23,7 @@
       "comments": false,
       "strings": false
     },
-    "editor.parameterHints.enabled": true,
+    "editor.parameterHints.enabled": false,
     "editor.wordBasedSuggestions": false,
     "editor.selectionHighlight": false,
     "editor.suggestOnTriggerCharacters": false,
@@ -50,7 +50,6 @@
     },
 
     "workbench.statusBar.visible": false,
-    "workbench.editor.openSideBySideDirection": "down",
 
     "window.zoomLevel": 0
      
