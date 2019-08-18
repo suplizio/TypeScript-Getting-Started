@@ -26,7 +26,7 @@
     "editor.parameterHints.enabled": false,
     "editor.wordBasedSuggestions": false,
     "editor.selectionHighlight": false,
-    "editor.suggestOnTriggerCharacters": false,
+    "editor.suggestOnTriggerCharacters": true,
     "editor.folding": false,
     "editor.hover.enabled": true,
     "editor.tabCompletion": "onlySnippets",
