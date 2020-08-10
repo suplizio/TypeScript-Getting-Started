@@ -4,14 +4,14 @@
   
 //     "files.autoSave": "afterDelay",
   
-//     "files.exclude": {
-//         "**/.git": true,
-//         "**/.svn": true,
-//         "**/.hg": true,
-//         "**/.DS_Store": true,
-//         "**/.gitignore": true,
-//         "npm-debug.log": true
-//     },
+    "files.exclude": {
+        "**/.git": true,
+        "**/.svn": true,
+        "**/.hg": true,
+        "**/.DS_Store": true,
+        "**/.gitignore": true,
+        "npm-debug.log": true
+    },
   
 //     "editor.fontFamily": "Roboto Mono",
 //     "editor.fontSize": 16,
